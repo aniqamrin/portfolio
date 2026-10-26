@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="author" content="Iuri Silva" />
+    <meta name="author" content="Aniq Amrin Azri" />
     <meta
       name="description"
-      content="Meu nome é Iuri, desenvolvo interfaces modernas e de alta qualidade, concentrado em performance, animações, responsividade e SEO."
+      content="My name is Aniq Amrin Azri, I build modern high-quality web apps and AI solutions, focused on performance, forecasting and usability."
     />
     <meta
       name="keywords"
-      content="sites, web, desenvolvimento, frontend, iuri silva, ui designer, programador, iuricode, front-end, designer, ui, iuri, freelancer, freela, website, portfólio"
+      content="sites, web, development, frontend, backend, full-stack, AI, machine learning, LSTM, FinBERT, Next.js, Python, Aniq Amrin Azri, aniqamrin, portfolio, developer"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#986DFF" />
-    <meta name="copyright" content="Iuri Silva 2021" />
-    <meta http-equiv="content-language" content="pt-br" />
+    <meta name="copyright" content="Aniq Amrin Azri 2026" />
+    <meta http-equiv="content-language" content="en" />
     <meta
       property="og:image"
-      content="https://iuricode.com/assets/image/preview.png"
+      content="assets/image/preview.png"
     />
-    <meta property="og:title" content="Portfólio // Iuri Silva" />
-    <meta property="og:description" content="Portfólio // Iuri Silva" />
+    <meta property="og:title" content="Portfolio // Aniq Amrin Azri" />
+    <meta property="og:description" content="Portfolio // Aniq Amrin Azri" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,6 +28,40 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      html { scroll-behavior: smooth; }
+      .tech-pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 16px; }
+      .tech-pills span {
+        font-size: 1.3rem; padding: 4px 12px; border-radius: 20px;
+        background: rgba(152, 109, 255, 0.12); color: #986DFF;
+        border: 1px solid rgba(152, 109, 255, 0.35); white-space: nowrap;
+      }
+      #s-contact { padding: 96px 24px; text-align: center; background: #111111; border-top: 1px solid #1f1f1f; }
+      #s-contact h2 { font-size: 4rem; color: #ffffff; font-weight: 500; padding-bottom: 8px; }
+      #s-contact h2 span { color: #986DFF; }
+      #s-contact p { color: #9ca3af; font-size: 1.8rem; margin: 16px auto 28px; max-width: 560px; line-height: 1.6; }
+      .contact-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+      .contact-btns a {
+        font-size: 1.8rem; padding: 12px 32px; border-radius: 6px; text-decoration: none;
+        border: 1px solid #986DFF; transition: 0.3s;
+      }
+      .contact-btns a.primary { background: #986DFF; color: #fff; }
+      .contact-btns a.secondary { color: #986DFF; }
+      .contact-btns a:hover { opacity: 0.85; transform: translateY(-2px); }
+      footer { background: #151515 !important; border-top: 1px solid #1f1f1f; }
+      footer p { color: #9ca3af !important; }
+      footer a { color: #986DFF !important; }
+      #skills-cards article { width: 18% !important; height: 110px !important; flex-direction: column; gap: 6px; }
+      #skills-cards article img { width: 48px !important; height: 48px !important; }
+      #skills-cards article small { font-size: 1.2rem; color: #9ca3af; }
+      @media screen and (max-width: 768px) {
+        #skills-cards article { width: 30% !important; }
+      }
+      .rf-shot {
+        width: 100%; border-radius: 8px; margin-bottom: 16px;
+        border: 1px solid rgba(152,109,255,.3); display: block;
+      }
+    </style>
     <link
       rel="shortcut icon"
       href="assets/image/logo-page.svg"
@@ -35,30 +69,27 @@
     />
     <link rel="icon" href="assets/image/logo-page.svg" />
     <link rel="apple-touch-icon" href="assets/image/logo-page.svg" />
-    <link rel="canonical" href="https://iuricode.com/" />
     <script src="assets/js/svg-inject.min.js"></script>
-    <title>Portfólio // Iuri Silva</title>
+    <title>Portfolio // Aniq Amrin Azri</title>
   </head>
 
   <body>
     <header>
       <div class="grid-layout">
         <nav>
-          <img
-            src="assets/image/logo-iuricode.svg"
-            alt="iuricode"
-            width="150px"
-            height="25px"
-          />
+          <div style="font-size: 2.2rem; font-weight: 600; color: #fff; letter-spacing: 0.5px;">&lt;aniq<span style="color: #986DFF;">amrin</span>/&gt;</div>
           <div class="mobile-menu">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
           </div>
           <ul class="nav-list">
-            <li><a href="https://iuricode-blog.vercel.app/" rel="noopener" target="_blank">Blog</a></li>
-            <li><a href="https://iuricode-blog.vercel.app/setup" rel="noopener" target="_blank">Setup</a></li>
-            <li><a href="https://iuricode.com/efront/" rel="noopener" target="_blank">eBook</a></li>
+            <li><a href="#s-about">About</a></li>
+            <li><a href="#s-experience">Experience</a></li>
+            <li><a href="#s-projects">Projects</a></li>
+            <li><a href="#s-services">What I do</a></li>
+            <li><a href="#s-skills">Skills</a></li>
+            <li><a href="#s-contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -70,28 +101,24 @@
           <div id="home">
             <div id="home-container-text">
               <h1 class="delayMediumReveal">
-                Ajudando empresas a construírem
-                <span>produtos digitais</span> de forma moderna e de alta
-                qualidade.
+                Hi 👋, I'm Aniq,
+                <span>software developer</span> building AI & web apps.
               </h1>
               <p class="typewriter">
-                Uma mistura de Design, Desenvolvimento Frontend e habilidade
-                profissional que vão destacar seu produto no mercado.
+                Final-year student, ex-Virtual Guards, hackathon lover into fintech — Revenue Flow, Face2Go, trading bots.
               </p>
 
               <a
-                href="https://iuricode.com/efront/"
-                rel="noopener"
-                target="_blank"
+                href="#s-projects"
                 class="delayExtraBigReveal"
               >
-                Aprenda frontend comigo
+                View my projects
               </a>
             </div>
 
             <img
               src="assets/image/logo.svg"
-              alt="ìcone iuricode"
+              alt="icon aniq"
               onload="SVGInject(this)"
               id="logo"
               width="500px"
@@ -105,93 +132,47 @@
         <div class="grid-layout">
           <div>
             <div id="creator-photo" class="delayMediumReveal">
-              <h3 class="delayExtraBigReveal">Criador do eFront</h3>
+              <h3 class="delayExtraBigReveal">Builder of Revenue Flow</h3>
             </div>
             <div>
-              <h4 class="delayMediumReveal">Quem sou</h4>
-              <h2 class="delaySmallReveal">Iuri Silva</h2>
+              <h4 class="delayMediumReveal">Who am I</h4>
+              <h2 class="delaySmallReveal">Aniq Amrin Azri</h2>
               <h3 class="delayMediumReveal">
-                Frontend Developer & UI Designer
+                AI Engineer & Full-Stack Developer
               </h3>
 
               <p class="delayLargeReveal">
-                Meu nome é Iuri Silva, ou “iuricode” (é como me chamam agora)
-                sou o criador do eFront, um material de ensino de frontend pela
-                internet. Atualmente sou freelancer como Frontend Developer e UI
-                Designer. Desenvolvo interfaces modernas e de alta qualidade,
-                concentrado em performance, animações, responsividade e SEO.
+                My name is Aniq Amrin Azri. I'm a final-year degree student
+                with 6 months of industry experience as a Web Developer at Virtual Guards.
+                I'm into finance-flavoured software — Revenue Flow (financial
+                intelligence for Malaysian SMEs), Face2Go (biometric TnG payments),
+                trading bots — plus hackathon builds like EcosystemOS AI.
+                Outside class I join hackathons — I love the competitiveness:
+                scoping fast, coding under pressure and shipping a working demo.
               </p>
               <nav class="delayLargeReveal">
                 <ul>
                   <a
-                    href="https://www.instagram.com/iuricode/"
+                    href="https://github.com/aniqamrin"
                     rel="noopener"
                     target="_blank"
                     ><li>
                       <img
-                        src="./assets/icons/instagram.svg"
-                        alt="Ícone do Instagram"
+                        src="./assets/icons/github.svg"
+                        alt="GitHub icon"
                         onload="SVGInject(this)"
                       /></li
                   ></a>
 
                   <a
-                    href="https://www.linkedin.com/in/iuricode/"
+                    href="https://my.linkedin.com/in/aniq-amrin-559199314"
                     rel="noopener"
                     target="_blank"
                     ><li>
                       <img
                         src="./assets/icons/linkedin.svg"
                         rel="noopener"
-                        alt="Ícone do LinkedIn"
-                        onload="SVGInject(this)"
-                      /></li
-                  ></a>
-
-                  <a
-                    href="https://iuricode-blog.vercel.app/"
-                    rel="noopener"
-                    target="_blank"
-                    ><li>
-                      <img
-                        src="./assets/icons/laptop.svg"
-                        alt="Ícone de um laptop"
-                        onload="SVGInject(this)"
-                      /></li
-                  ></a>
-
-                  <a
-                    href="https://discord.gg/uHWE7QbXnp"
-                    rel="noopener"
-                    target="_blank"
-                    ><li>
-                      <img
-                        src="./assets/icons/discord.svg"
-                        alt="Ícone do Discord"
-                        onload="SVGInject(this)"
-                      /></li
-                  ></a>
-
-                  <a
-                    href="https://github.com/iuricode"
-                    rel="noopener"
-                    target="_blank"
-                    ><li>
-                      <img
-                        src="./assets/icons/github.svg"
-                        alt="Ícone do GitHub"
-                        onload="SVGInject(this)"
-                      /></li
-                  ></a>
-
-                  <a
-                    href="https://www.behance.net/iuricode"
-                    rel="noopener"
-                    target="_blank"
-                    ><li>
-                      <img
-                        src="./assets/icons/behance.svg"
-                        alt="Ícone do Behance"
+                        alt="LinkedIn icon"
                         onload="SVGInject(this)"
                       /></li
                   ></a>
@@ -204,39 +185,37 @@
 
       <section id="s-experience">
         <div class="grid-layout">
-          <h2 class="delaySmallReveal">Experiências <span>.</span></h2>
+          <h2 class="delaySmallReveal">Experience <span>.</span></h2>
           <div id="experience">
             <div
               class="option-experience intervalCardReveal"
               id="experience-company"
             >
               <div class="company digitalhouse activeExperience">
-                <h3>Digital House</h3>
-              </div>
-              <div class="company zuplae">
-                <h3>Zuplae</h3>
+                <h3>Revenue Flow</h3>
               </div>
               <div class="company contweb">
-                <h3>ContWeb</h3>
+                <h3>Virtual Guards</h3>
               </div>
               <div class="company codigofontetv">
-                <h3>Código Fonte TV</h3>
+                <h3>Degree Student</h3>
               </div>
             </div>
             <div class="text-experience intervalCardReveal">
               <div>
                 <h4 class="titleExperience">
-                  Professor conteudista em Frontend
+                  Founder & Full-Stack Developer (Self-employed)
                 </h4>
-                <p class="dateExperience">Nov 2021 - Nov 2022 (1 ano)</p>
+                <p class="dateExperience">2025 - Present</p>
               </div>
-              <h5 class="companyExperience">Digital House</h5>
+              <h5 class="companyExperience">Revenue Flow</h5>
               <p class="changeExperience">
-                Trabalhei como instrutor conteudista em frontend na Digital
-                House, o trabalho consistia em criar conteúdos para as aulas de
-                especialização frontend. Alguns temas dos conteúdos realizados
-                foram: React, Redux, TypeScript, Testes, GraphQL, Next.js, MUI,
-                React Hook Form e styled-components.
+                Building Revenue Flow, a financial intelligence platform for
+                Malaysian SMEs. Next.js + PostgreSQL + Prisma with revenue
+                forecasting (moving averages, exponential smoothing, regression
+                with backtesting), 30/60/90-day cash-flow projection, business
+                health score, MY tax estimators, CSV import, and an AI advisor
+                (OpenAI + offline fallback).
               </p>
             </div>
           </div>
@@ -245,123 +224,160 @@
 
       <section id="s-projects">
         <div class="grid-layout">
-          <h2 class="delaySmallReveal">Projetos <span>.</span></h2>
+          <h2 class="delaySmallReveal">Projects <span>.</span></h2>
           <div id="projects">
             <article class="intervalCardReveal teslabank">
-              <h3>TeslaBank</h3>
+              <h3>Revenue Flow ⭐ Featured</h3>
+              <img src="assets/image/revenueflow.png" alt="Revenue Flow dashboard screenshot" class="rf-shot" onerror="this.style.display='none'" />
               <p>
-                Site institucional de banco digital, feito em HTML, Sass e
-                JavaScript.
+                Financial intelligence platform for Malaysian SMEs. Forecasting,
+                cash-flow, AI advisor. Built with Next.js, PostgreSQL, Prisma.
               </p>
+              <div class="tech-pills">
+                <span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Prisma</span><span>OpenAI</span><span>Docker</span>
+              </div>
 
               <a
-                href="https://iuricode.com/teslabank/"
+                href="https://github.com/aniqamrin"
                 rel="noopener"
                 target="_blank"
                 id="teslabank"
-                >Visualizar projeto
+                >Private repo - demo on request
               </a>
             </article>
 
             <article class="intervalCardReveal naped">
-              <h3>Naped</h3>
+              <h3>Face2Go</h3>
               <p>
-                Site de notícias nerd, feito em Next.js, TypeScript e
-                styled-components.
+                AI biometric payment layer for Touch 'n Go wallets — live face
+                capture verified with AWS Rekognition, fallback passcode,
+                PostgreSQL ledger. FinHack build.
               </p>
+              <div class="tech-pills">
+                <span>JavaScript</span><span>AWS Rekognition</span><span>PostgreSQL</span><span>Prisma</span><span>Docker</span>
+              </div>
 
               <a
-                href="https://efront-naped.vercel.app/"
+                href="https://github.com/aniqamrin/Face2Go-TnG-Finhack"
                 rel="noopener"
                 target="_blank"
                 id="naped"
-                >Visualizar projeto
+                >View project
               </a>
             </article>
 
             <article class="intervalCardReveal efront">
-              <h3>eFront</h3>
+              <h3>EcosystemOS AI</h3>
               <p>
-                Página de vendas do eFront, feito em HTML, Sass e JavaScript.
+                Hackathon platform connecting startups, mentors and investors —
+                matching + relationship graph powered by Google Gemini AI.
               </p>
+              <div class="tech-pills">
+                <span>Next.js 15</span><span>TypeScript</span><span>Gemini AI</span><span>PostgreSQL</span>
+              </div>
               <a
-                href="https://iuricode.com/efront"
+                href="https://github.com/aniqamrin/BWAI_HACKATHON"
                 rel="noopener"
                 target="_blank"
                 id="efront"
-                >Visualizar projeto
+                >View project
               </a>
             </article>
 
             <article class="intervalCardReveal steam">
-              <h3>Steam</h3>
-              <p>Redesign da Steam, feito em HTML, Sass e JavaScript.</p>
+              <h3>Cursor Buddy</h3>
+              <p>Windows-native AI companion — Ctrl+Shift+Space pops a bubble at your cursor with screen OCR context, streaming OpenAI + Gemini. Tauri + Rust.</p>
+              <div class="tech-pills">
+                <span>Rust</span><span>Tauri</span><span>TypeScript</span><span>OpenAI</span><span>Gemini</span>
+              </div>
               <a
-                href="https://efront-steam.vercel.app/"
+                href="https://github.com/aniqamrin/cursor-buddy"
                 rel="noopener"
                 target="_blank"
                 id="steam"
-                >Visualizar projeto
+                >View project
               </a>
             </article>
 
-            <article class="intervalCardReveal none">
-              <h3>Em construção...</h3>
+            <article class="intervalCardReveal teslabank">
+              <h3>LinguaFox</h3>
               <p>
-                Pegue o café e espere um pouco, estou desenvolvendo o projeto.
+                English learning RPG with monster catching, inspired by Pokémon
+                FireRed. Built with JavaScript.
               </p>
+              <div class="tech-pills">
+                <span>JavaScript</span><span>Game Dev</span>
+              </div>
+              <a
+                href="https://github.com/aniqamrin/linguafox"
+                rel="noopener"
+                target="_blank"
+                id="teslabank"
+                >View project
+              </a>
             </article>
 
-            <article class="intervalCardReveal none">
-              <h3>Em construção...</h3>
+            <article class="intervalCardReveal naped">
+              <h3>RepLog</h3>
               <p>
-                Pegue o café e espere um pouco, estou desenvolvendo o projeto.
+                Gym workout logger for Android — track reps, sets and progress.
+                Built with Kotlin.
               </p>
+              <div class="tech-pills">
+                <span>Kotlin</span><span>Android</span>
+              </div>
+              <a
+                href="https://github.com/aniqamrin/RepLog"
+                rel="noopener"
+                target="_blank"
+                id="naped"
+                >View project
+              </a>
             </article>
           </div>
           <a
-            href="https://github.com/iuricode?tab=repositories"
+            href="https://github.com/aniqamrin?tab=repositories"
             rel="noopener"
             target="_blank"
             class="delayExtraBigReveal"
-            >Repositórios no GitHub</a
+            >Repositories on GitHub</a
           >
         </div>
       </section>
 
       <section id="s-services">
         <div class="grid-layout">
-          <h2 class="delaySmallReveal">Serviços <span>.</span></h2>
+          <h2 class="delaySmallReveal">What I do <span>.</span></h2>
           <div id="services">
-            <article class="intervalCardReveal">
-              <div>
-                <img
-                  src="assets/icons/icon-design.svg"
-                  width="100px"
-                  height="100px"
-                  alt="ícone layers"
-                />
-              </div>
-              <h3>UI Design</h3>
-              <p>
-                Desenho interface de forma que ela seja clara, objetiva e
-                principalmente intuitiva para o usuário.
-              </p>
-            </article>
-
             <article class="intervalCardReveal">
               <div>
                 <img
                   src="assets/icons/icon-front.svg"
                   width="100px"
                   height="100px"
-                  alt="ícone código"
+                  alt="code icon"
                 />
               </div>
-              <h3>Desenvolvimento</h3>
+              <h3>Hackathon Builds</h3>
               <p>
-                Desenvolvo sites profissionais, blogs, portfólios, landing pages
-                e e-commerce.
+                I love competitive coding — scoping fast, building under
+                pressure and shipping a working demo in 24-48 hours.
+              </p>
+            </article>
+
+            <article class="intervalCardReveal">
+              <div>
+                <img
+                  src="assets/icons/icon-design.svg"
+                  width="100px"
+                  height="100px"
+                  alt="layers icon"
+                />
+              </div>
+              <h3>AI & ML Prototypes</h3>
+              <p>
+                LSTM forecasting, FinBERT sentiment analysis and AI advisors
+                grounded in real data — my FYP territory.
               </p>
             </article>
 
@@ -371,13 +387,13 @@
                   src="assets/icons/icon-app-design.svg"
                   width="100px"
                   height="100px"
-                  alt="ícone imagem"
+                  alt="chart icon"
                 />
               </div>
-              <h3>Motion</h3>
+              <h3>Full-Stack Web Apps</h3>
               <p>
-                Crio interações que transmitem sensação de modernidade, além de
-                chamarem a atenção do usuário.
+                Dashboards and web apps with Next.js, TypeScript, PostgreSQL
+                and Prisma — like Revenue Flow.
               </p>
             </article>
           </div>
@@ -388,9 +404,9 @@
         <div class="grid-layout">
           <div id="skills">
             <article id="skills-text">
-              <h2 class="delaySmallReveal">Conhecimentos <span>.</span></h2>
+              <h2 class="delaySmallReveal">Skills <span>.</span></h2>
               <p class="delayMediumReveal changeDescription">
-                *passe o cursor do mouse no card para ler*
+                *hover over a card to read*
               </p>
             </article>
 
@@ -400,7 +416,7 @@
                   src="assets/icons/html.svg"
                   width="60px"
                   height="60px"
-                  alt="ícone do html"
+                  alt="html icon"
                 />
               </article>
               <article class="css intervalCardReveal">
@@ -408,7 +424,7 @@
                   src="assets/icons/css.svg"
                   width="60px"
                   height="60px"
-                  alt="ícone do css"
+                  alt="css icon"
                 />
               </article>
               <article class="js intervalCardReveal">
@@ -416,15 +432,15 @@
                   src="assets/icons/javascript.svg"
                   width="60px"
                   height="60px"
-                  alt="ícone do javascript"
+                  alt="javascript icon"
                 />
               </article>
-              <article class="sass intervalCardReveal">
+              <article class="typescript intervalCardReveal">
                 <img
-                  src="assets/icons/sass.svg"
+                  src="assets/icons/typescript.svg"
                   width="60px"
                   height="60px"
-                  alt="ícone do sass"
+                  alt="typescript icon"
                 />
               </article>
               <article class="react intervalCardReveal">
@@ -432,7 +448,7 @@
                   src="assets/icons/react.svg"
                   width="60px"
                   height="60px"
-                  alt="ícone do react"
+                  alt="react icon"
                 />
               </article>
               <article class="next intervalCardReveal">
@@ -440,15 +456,7 @@
                   src="assets/icons/next.svg"
                   width="60px"
                   height="60px"
-                  alt="ícone do next"
-                />
-              </article>
-              <article class="styled intervalCardReveal">
-                <img
-                  src="assets/icons/styled-components.svg"
-                  width="60px"
-                  height="60px"
-                  alt="ícone do styled"
+                  alt="next icon"
                 />
               </article>
               <article class="tailwind intervalCardReveal">
@@ -456,43 +464,151 @@
                   src="assets/icons/tailwindcss.svg"
                   width="60px"
                   height="60px"
-                  alt="ícone do tailwind"
+                  alt="tailwind icon"
+                />
+              </article>
+              <article class="python intervalCardReveal">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                  width="60px"
+                  height="60px"
+                  alt="python icon"
                 />
               </article>
 
-              <article class="radix intervalCardReveal">
+              <article class="postgres intervalCardReveal">
                 <img
-                  src="assets/icons/radix.svg"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
                   width="60px"
                   height="60px"
-                  alt="ícone do radix"
+                  alt="postgresql icon"
                 />
               </article>
 
-              <article class="typescript intervalCardReveal">
+              <article class="docker intervalCardReveal">
                 <img
-                  src="assets/icons/typescript.svg"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
                   width="60px"
                   height="60px"
-                  alt="ícone do typescript"
+                  alt="docker icon"
                 />
               </article>
 
-              <article class="storybook intervalCardReveal">
+              <article class="kotlin intervalCardReveal">
                 <img
-                  src="assets/icons/storybook.svg"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg"
                   width="60px"
                   height="60px"
-                  alt="ícone do storybook"
+                  alt="kotlin icon"
                 />
               </article>
 
-              <article class="cypress intervalCardReveal">
+              <article class="sass intervalCardReveal">
                 <img
-                  src="assets/icons/cypress.svg"
+                  src="assets/icons/sass.svg"
                   width="60px"
                   height="60px"
-                  alt="ícone do cypress"
+                  alt="sass icon"
+                />
+              </article>
+
+              <article class="git intervalCardReveal">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                  width="60px"
+                  height="60px"
+                  alt="git icon"
+                />
+              </article>
+
+              <article class="tensorflow intervalCardReveal">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+                  width="60px"
+                  height="60px"
+                  alt="tensorflow icon"
+                />
+              </article>
+
+              <article class="pytorch intervalCardReveal">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
+                  width="60px"
+                  height="60px"
+                  alt="pytorch icon"
+                />
+              </article>
+
+              <article class="jupyter intervalCardReveal">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg"
+                  width="60px"
+                  height="60px"
+                  alt="jupyter icon"
+                />
+              </article>
+
+              <article class="figma intervalCardReveal">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                  width="60px"
+                  height="60px"
+                  alt="figma icon"
+                />
+              </article>
+
+              <article class="prisma intervalCardReveal">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg"
+                  width="60px"
+                  height="60px"
+                  alt="prisma icon"
+                />
+              </article>
+
+              <article class="cplusplus intervalCardReveal">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                  width="60px"
+                  height="60px"
+                  alt="c++ icon"
+                />
+              </article>
+
+              <article class="java intervalCardReveal">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                  width="60px"
+                  height="60px"
+                  alt="java icon"
+                />
+              </article>
+
+              <article class="rust intervalCardReveal">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg"
+                  width="60px"
+                  height="60px"
+                  alt="rust icon"
+                  style="filter: invert(1);"
+                />
+              </article>
+
+              <article class="csharp intervalCardReveal">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                  width="60px"
+                  height="60px"
+                  alt="c# icon"
+                />
+              </article>
+
+              <article class="php intervalCardReveal">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                  width="60px"
+                  height="60px"
+                  alt="php icon"
                 />
               </article>
             </div>
@@ -500,22 +616,33 @@
         </div>
       </section>
 
+      <section id="s-contact">
+        <div class="grid-layout">
+          <h2 class="delaySmallReveal">Let's build something <span>.</span></h2>
+          <p class="delayMediumReveal">
+            Open to internships, hackathon teams, freelance dashboards and
+            AI prototype work. Fastest way to reach me is LinkedIn or email.
+          </p>
+          <div class="contact-btns delayLargeReveal">
+            <a class="primary" href="https://my.linkedin.com/in/aniq-amrin-559199314" rel="noopener" target="_blank">LinkedIn</a>
+            <a class="secondary" href="https://github.com/aniqamrin" rel="noopener" target="_blank">GitHub</a>
+            <a class="secondary" href="mailto:aniqamrin@gmail.com">Email me</a>
+          </div>
+        </div>
+      </section>
+
       <footer>
         <div class="grid-layout">
           <p>
-            Copyright © 2021
-            <a href="https://iuricode.com" rel="noopener" target="_blank">
-              iuricode.com.
+            Copyright © 2026
+            <a href="https://github.com/aniqamrin" rel="noopener" target="_blank">
+              aniqamrin.
             </a>
-            Todos os direitos reservados.
+            All rights reserved.
           </p>
 
           <div>
-            <p>Powered by</p>
-            <img
-              src="./assets/icons/iuricode-logo-footer.svg"
-              alt="Logo iuricode"
-            />
+            <p>Built by Aniq Amrin Azri</p>
           </div>
         </div>
       </footer>

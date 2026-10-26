@@ -10,91 +10,128 @@ typeWrite(document.querySelector(".typewriter"));
 
 hoverChangeExperience(
   ".digitalhouse",
-  `Trabalhei como instrutor conteudista em frontend na
-  Digital House, o trabalho consistia em criar conteúdos para as
-  aulas de especialização frontend. Alguns temas dos conteúdos
-  realizados foram: React, Redux, TypeScript, Testes,
-  GraphQL, Next.js, MUI, React Hook Form e styled-components.`,
-  "Professor conteudista em Frontend",
-  "Digital House",
-  "Nov 2021 - Nov 2022 (1 ano)"
-);
-
-hoverChangeExperience(
-  ".zuplae",
-  `Trabalhei como Social Media e Designer na Zuplae que é um escola
-  de programação, onde teve como foco as criações de conteúdos sobre
-  programação para a comunidade dev através das redes sociais.`,
-  "Social Media e UI Designer",
-  "Zuplae",
-  "Jan 2022 - Abril 2022 (4 meses)"
-);
-
-hoverChangeExperience(
-  ".codigofontetv",
-  `Trabalhei como Social Media e Designer no Código Fonte TV, 
-  onde teve como foco as criações de conteúdos sobre programação 
-  para a comunidade dev através das redes sociais.`,
-  "Social Media e Designer",
-  "Código Fonte TV",
-  "Jun 2021 - Jan 2022 (8 meses)"
+  `Founder of Revenue Flow (self-employed) - a financial intelligence
+  platform for Malaysian SMEs. Next.js + PostgreSQL + Prisma with revenue
+  forecasting (moving averages, exponential smoothing, regression
+  with backtesting), 30/60/90-day cash-flow projection, business
+  health score, MY tax estimators, CSV import, and an AI advisor
+  (OpenAI + offline fallback).`,
+  "Founder & Full-Stack Developer (Self-employed)",
+  "Revenue Flow",
+  "2025 - Present"
 );
 
 hoverChangeExperience(
   ".contweb",
-  `Realizei o estágio na ContWeb, uma empresa de contabilidade. 
-  Onde pela primeira vez tive experiência com o React. Além do
-  desenvolvimento frontend criei os designs da nova plataforma da empresa.`,
-  "Developer frontend e UI Designer",
-  "ContWeb",
-  "Set 2021 - Nov 2021 (3 meses)"
+  `Web Developer at Virtual Guards (6 months). Built responsive
+  websites and dashboards, worked with HTML, CSS, JavaScript and
+  modern frontend tooling, collaborating on real client requirements
+  and deployments.`,
+  "Web Developer",
+  "Virtual Guards",
+  "6 months"
+);
+
+hoverChangeExperience(
+  ".codigofontetv",
+  `Final-year degree student in Computer Science / AI. Coursework in
+  software engineering, databases, machine learning and mobile
+  development (Kotlin, Python, JavaScript). Active builder with 20+
+  public repos including Face2Go, EcosystemOS AI, RepLog and trading bots.`,
+  "Final Year Degree Student",
+  "University",
+  "2022 - Present"
 );
 
 hoverChangeDescription(
   ".html",
-  "HTML é uma linguagem de marcação, onde marcamos os elementos para definir quais informações a página vai exibir."
+  "HTML is a markup language where we mark up elements to define what information the page will display."
 );
 hoverChangeDescription(
   ".css",
-  "CSS é uma linguagem de folha de estilo composta por “camadas”, criado com o propósito de estilizar as páginas."
+  "CSS is a stylesheet language made of layers, created to style pages."
 );
 hoverChangeDescription(
   ".js",
-  "JavaScript é uma linguagem de programação que permite a você implementar elementos dinâmicos em páginas web."
+  "JavaScript is a programming language that lets you implement dynamic elements in web pages."
 );
 hoverChangeDescription(
   ".sass",
-  "Sass é um pré-processador CSS que adiciona alguns recursos que não estão disponíveis de forma nativa."
+  "Sass is a CSS preprocessor that adds features not available natively."
 );
 hoverChangeDescription(
   ".react",
-  "React é uma biblioteca JavaScript com foco em criar interfaces de usuário de forma componetizada."
+  "React is a JavaScript library focused on building component-based user interfaces."
 );
 hoverChangeDescription(
   ".next",
-  "Next.js é uma estrutura da web que permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para web baseados em React."
-);
-hoverChangeDescription(
-  ".styled",
-  "styled-components é uma biblioteca que utiliza o conceito de CSS-in-JS, ou seja, que nos permite escrever códigos CSS dentro do Javascript."
+  "Next.js is a React framework for server-side rendering, static generation and full-stack web apps - the stack behind Revenue Flow."
 );
 hoverChangeDescription(
   ".tailwind",
-  "Tailwind CSS é um framework CSS que nos fornece classes utilitárias com o propósito de estilizar as páginas."
+  "Tailwind CSS is a utility-first CSS framework for styling pages quickly."
 );
 hoverChangeDescription(
   ".typescript",
-  "TypeScript é um superset do JavaScript que incluir recursos que não estão presentes na linguagem de forma nativa, além de torná-la estática."
+  "TypeScript is a superset of JavaScript that adds static typing and features not present natively."
 );
 hoverChangeDescription(
-  ".radix",
-  "Radix é uma biblioteca que fornece componentes acessíveis e sem estilos para a criação de aplicação em React."
+  ".python",
+  "Python is my main language for backend scripts, trading bots, sentiment pipelines and data work."
 );
 hoverChangeDescription(
-  ".cypress",
-  "Cypress é um framework para automação de testes end-to-end, onde atualmente usa a linguagem JavaScript."
+  ".postgres",
+  "PostgreSQL is the relational database behind Revenue Flow, with Prisma ORM, migrations and seeding."
 );
 hoverChangeDescription(
-  ".storybook",
-  "Storybook é uma ferramenta que tem como objetivo documentar e testar os componentes da aplicação."
+  ".docker",
+  "Docker is how I ship Revenue Flow - Postgres in compose, reproducible dev and deploy environments."
+);
+hoverChangeDescription(
+  ".kotlin",
+  "Kotlin is what I used to build RepLog, a native Android workout-tracking app."
+);
+hoverChangeDescription(
+  ".git",
+  "Git is how I version everything - 20+ public repos, branching, PRs and clean commit history."
+);
+hoverChangeDescription(
+  ".tensorflow",
+  "TensorFlow / Keras is what I use for time-series and deep learning experiments."
+);
+hoverChangeDescription(
+  ".pytorch",
+  "PyTorch is what I use for FinBERT sentiment experiments and transformer fine-tuning."
+);
+hoverChangeDescription(
+  ".jupyter",
+  "Jupyter Notebook is where I prototype ML work - heart-disease case study, LSTM experiments, data exploration."
+);
+hoverChangeDescription(
+  ".figma",
+  "Figma is where I mock up dashboards and landing pages before building them in code."
+);
+hoverChangeDescription(
+  ".prisma",
+  "Prisma is the ORM in Revenue Flow - schema, migrations, seeding and type-safe DB access."
+);
+hoverChangeDescription(
+  ".cplusplus",
+  "C++ is my go-to for uni coursework, algorithms and performance-heavy assignments."
+);
+hoverChangeDescription(
+  ".java",
+  "Java is what I used for the University Course Registration System and Retail Inventory Management System."
+);
+hoverChangeDescription(
+  ".rust",
+  "Rust is what I used to build cursor-buddy - exploring memory safety and systems programming."
+);
+hoverChangeDescription(
+  ".csharp",
+  "C# is what I used for the Quant Trading Bot experiments."
+);
+hoverChangeDescription(
+  ".php",
+  "PHP is what powers Read2Rent (read2rentV2) - full-stack rental app with server-rendered pages."
 );
